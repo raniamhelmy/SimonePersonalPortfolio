@@ -139,9 +139,9 @@ body {
   display: none;
 }
 
-#btnControl:checked ~ ul.mobileList {
+/* #btnControl:checked ~ ul.mobileList {
   display: block;
-}
+} */
 
 .mobileList {
   display: none;
@@ -766,6 +766,7 @@ li.item--active a {
 
 .photo__item:hover .gallery__photo {
   transform: scale(1.1);
+  filter: blur(2px);
 }
 
 .photo__item:hover > .project__desc {
