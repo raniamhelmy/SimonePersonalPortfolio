@@ -233,7 +233,8 @@ body {
   position: relative;
   cursor: pointer;
   margin-top: 80px;
-  animation: ar_down 3s forwards linear infinite;
+  transition: all .1s ease-in;
+  animation: ar_down 3s normal linear infinite;
 }
 
 .home__arrow--click .fa-chevron-down {
@@ -243,12 +244,18 @@ body {
 @keyframes ar_down {
   0% {
     top: 0;
+    opacity: 0.25;
+  }
+  25%{
+    opacity: 0.5;
   }
   50% {
     top: 5%;
+    opacity: 0.75;
   }
   100% {
-    top: 0%;
+    top: 10%;
+    opacity: 1;
   }
 }
 
