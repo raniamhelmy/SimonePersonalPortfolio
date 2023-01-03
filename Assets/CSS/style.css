@@ -3,19 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --white__color:#fff;
+  --mainText__color:#4c4d4d;
+  --mainTitle__color:#252b33;
+  --secondText__color:#dc3545;
+  --button__color:#20c997;
+  --home__color:#dee3e4;
+  --black__color:#000;
+  --rate__color:gold;
+  --hoverButton__color:#1baa80;
+  --titleBG__color:rgba(222, 227, 228, 0.5);
+  --titleOL__color:#212529;
+  --number__color:#6c757d;
+  --secondButton__color:#6c6c6c;
+  --secondNav__color:#7b8084;
+  --placeholder__color:#b1b4b8;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
 ::selection {
-  color: #fff;
-  background-color: #20c997;
+  color: var(--white__color);
+  background-color: var(--button__color);
   text-shadow: none;
 }
 
-/* :root{
-  --text__color:#4c4d4d;
-} */
+
+
 /*******************************************NavBar Section*****************************************/
 .navbar__nav {
   position: fixed;
@@ -69,17 +87,17 @@ body {
 .socialItem a {
   font-size: 16px;
   text-decoration: none;
-  color: #fff;
+  color: var(--white__color);
   transition: 1s ease;
 }
 
 .item a:hover {
-  color: #20c997;
+  color:var(--button__color);
 }
 
 .item.item__active a,
 .aboutTable__list--active {
-  color: #20c997;
+  color: var(--button__color);
 }
 
 .socialItem {
@@ -92,8 +110,8 @@ body {
 .socialItem .tooltiptext__dr{
   visibility: hidden;
   width: 80px;
-  background-color: black;
-  color: #fff;
+  background-color: var(--black__color);
+  color: var(--white__color);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -115,7 +133,7 @@ body {
     border:1px solid red;
 } */
 .navbar__barIcon {
-  color: #fff;
+  color: var(--white__color);
   font-size: 35px;
   cursor: pointer;
 }
@@ -153,7 +171,7 @@ body {
 }
 .mobileItem a {
   /* margin:16px auto; */
-  color: #fff;
+  color: var(--white__color);
   text-decoration: none;
   /* border:1px solid red; */
 }
@@ -170,7 +188,7 @@ body {
   background-position: center center;
   height: 90vh;
   margin-top: 80px;
-  color: #fff;
+  color: var(--white__color);
 }
 .home__bgLayer {
   background-color: rgba(0, 0, 0, 0.7);
@@ -193,7 +211,7 @@ body {
   font-size: 58px;
 }
 .home__desc {
-  color: #dee3e4;
+  color: var(--home__color);
   font-size: 21px;
   margin-bottom: 24px;
 }
@@ -201,9 +219,9 @@ body {
 .home__button {
   text-decoration: none;
   cursor: pointer;
-  color: #20c997;
+  color: var(--button__color);
   background-color: transparent;
-  border: 2px solid #20c997;
+  border: 2px solid var(--button__color);
   padding: 12.8px 41.6px;
   margin: 8px 0;
   font-size: 16px;
@@ -212,7 +230,7 @@ body {
 }
 
 .home__button:hover {
-  background-color: #20c997;
+  background-color: var(--button__color);
   color: #fff;
 }
 
@@ -245,6 +263,7 @@ body {
 
 #about {
   padding: 72px 0;
+  color:var(--mainText__color);
   /* border:1px solid green; */
 }
 
@@ -256,7 +275,7 @@ h2.titleBackground {
   /* font-size: 95px; */
   font-size: calc(50px + 3vw);
   font-weight: 600;
-  color: rgb(222, 227, 228, 0.5);
+  color: rgba(222, 227, 228, 0.5);
   /* border:1px solid red; */
 }
 
@@ -264,7 +283,7 @@ h2.titleBackground {
   position: absolute;
   top: 33%;
   width: 100%;
-  color: #212529;
+  color: var(--titleOL__color);
   text-transform: capitalize;
   /* font-size: 36px; */
   font-size: calc(30px + 0.3vw);
@@ -275,7 +294,7 @@ h2.titleBackground {
   content: "";
   width: 6%;
   height: 3px;
-  background: #20c997;
+  background: var(--button__color);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -301,10 +320,10 @@ h2.titleBackground {
 .about__title {
   font-size: 28px;
   margin-bottom: 16px;
-  color: #252b33;
+  color: var(--mainTitle__color);
 }
 .aboutTitle__span {
-  color: #20c997;
+  color: var(--button__color);
 }
 .aboutParag__desc {
   font-size: 16px;
@@ -315,7 +334,7 @@ h2.titleBackground {
   height: auto;
   list-style: none;
   list-style-type: none;
-  color: #4c4d4d;
+  color: var(--mainText__color);
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -330,8 +349,8 @@ h2.titleBackground {
 .about__button--active {
   text-decoration: none;
   cursor: pointer;
-  color: #fff;
-  background-color: #20c997;
+  color: var(--white__color);
+  background-color: var(--button__color);
   border: none;
   padding: 12.8px 41.6px;
   font-size: 16px;
@@ -340,7 +359,7 @@ h2.titleBackground {
   transition: 1s ease;
 }
 .about__button--active:hover {
-  background-color: #1baa80;
+  background-color:var(--hoverButton__color);
 }
 
 .about__numbers {
@@ -360,12 +379,12 @@ h2.titleBackground {
   border-right: unset;
 }
 .aboutData__number {
-  color: #6c757d;
+  color: var(--number__color);
   font-size: 46px;
   font-weight: 500;
 }
 .aboutData__desc {
-  color: #4c4d4d;
+  color: var(--mainText__color);
   font-size: 16px;
 }
 
@@ -420,9 +439,9 @@ h2.titleBackground {
   font-size: 30px;
   width: 70px;
   height: 70px;
-  color: #20c997;
+  color: var(--button__color);
   border-radius: 4px;
-  background-color: #fff;
+  background-color: var(--white__color);
   justify-content: center;
   align-items: center;
   /* margin-right: 48px; */
@@ -437,7 +456,7 @@ h2.titleBackground {
 
 .card__title {
   font-size: 20px;
-  color: #252b33;
+  color: var(--mainTitle__color);
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -445,7 +464,7 @@ h2.titleBackground {
 .card__desc {
   line-height: 1.8;
   font-size: 16px;
-  color: #4c4d4d;
+  color: var(--mainText__color);
 }
 
 /**************************************************************************************************/
@@ -481,22 +500,22 @@ h2.titleBackground {
   width: calc(100% / 2);
 }
 .resume__title {
-  color: #252b33;
+  color: var(--mainTitle__color);
   font-size: 24px;
   margin-bottom: 24px;
 }
 .resume__card {
   border-radius: 4px;
   border: 1px solid #dee2e6;
-  background-color: #fff;
+  background-color: var(--white__color);
   padding: 24px;
   margin-bottom: 24px;
   /* max-width: 100%; */
 }
 
 .card__year {
-  background-color: #20c997;
-  color: #fff;
+  background-color: var(--button__color);
+  color: var(--white__color);
   padding: 4.9px 9.1px;
   margin-bottom: 16px;
   font-size: 14px;
@@ -506,18 +525,18 @@ h2.titleBackground {
   display: inline-block;
 }
 .card__title {
-  color: #252b33;
+  color: var(--mainTitle__color);
   font-size: 21px;
   margin-bottom: 8px;
 }
 .card__subtitle {
-  color: #dc3545;
+  color: var(--secondText__color);
   font-size: 16px;
   margin-bottom: 16px;
 }
 
 .skills__title {
-  color: #252b33;
+  color: var(--mainTitle__color);
   margin: 24px 0;
   font-size: 24px;
   display: block;
@@ -527,7 +546,7 @@ h2.titleBackground {
 
 .bar__label,
 .bar__label--perc {
-  color: #212529;
+  color: var(--titleOL__color);
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 8px;
@@ -563,9 +582,9 @@ h2.titleBackground {
 .progressValue__react,
 .progressValue__angular,
 .progressValue__bootstrap {
-  box-shadow: 0 10px 40px -10px #fff;
+  box-shadow: 0 10px 40px -10px var(--white__color);
   border-radius: 4px 0px 0px 4px;
-  background: #20c997;
+  background: var(--button__color);
   height: 10px;
   width: 0;
 }
@@ -659,8 +678,8 @@ h2.titleBackground {
   margin-top: 48px;
   cursor: pointer;
   color: #6c6c6c;
-  background-color: #fff;
-  border: 2px solid #6c757d;
+  background-color: var(--white__color);
+  border: 2px solid var(--number__color);
   padding: 12.8px 41.6px;
   font-size: 16px;
   font-weight: 500;
@@ -668,8 +687,8 @@ h2.titleBackground {
   transition: 1s ease;
 }
 .summary__button:hover {
-  background-color: #6c6c6c;
-  color: #fff;
+  background-color: var(--secondButton__color);
+  color: var(--white__color);
 }
 
 /**************************************************************************************************/
@@ -688,7 +707,7 @@ ul.portfolio__type {
   height: auto;
   list-style: none;
   list-style-type: none;
-  color: #4c4d4d;
+  color: var(--mainText__color);
   font-size: 16px;
   margin-bottom: 10px;
   display: flex;
@@ -697,20 +716,20 @@ ul.portfolio__type {
 }
 
 li.item--active a {
-  color: #1baa80;
-  border-bottom: 1px solid #1baa80;
+  color: var(--hoverButton__color);
+  border-bottom: 1px solid var(--hoverButton__color);
 }
 
 .type__item a {
   text-decoration: none;
   padding: 9.6px 16px;
-  color: #7b8084;
+  color: var(--secondNav__color);
   font-weight: 400;
   cursor: pointer;
 }
 
 .type__item a:hover {
-  color: #1baa80;
+  color: var(--hoverButton__color);
 }
 
 .portfolio__gallery {
@@ -783,7 +802,7 @@ img.gallery__photo{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--white__color);
   width: 100%;
   height: 100%;
 }
@@ -841,7 +860,7 @@ width: 100%;
 
 .card__info {
   display: flex;
-  color: #212529;
+  color:var(--titleOL__color);
   margin-bottom: 24px;
 }
 
@@ -856,7 +875,7 @@ width: 100%;
 
 } */
 .testCard__title {
-  color: #6c757d;
+  color: var(--number__color);
 }
 
 /* .testCard__desc{
@@ -866,10 +885,11 @@ width: 100%;
 .testCard__desc {
   line-height: 1.8;
   margin-bottom: 24px;
+  color: var(--titleOL__color);
 }
 
 .test__rate {
-  color: gold;
+  color: var(--rate__color);
   font-size: 14px;
 }
 .bullet__container--web,
@@ -878,7 +898,7 @@ width: 100%;
   width: 50%;
   margin: auto;
   text-align: center;
-  color: #20c997;
+  color: var(--button__color);
 }
 
 /**************************************************************************************************/
@@ -910,7 +930,7 @@ width: 100%;
 .contact__form {
   max-width: 100%;
   flex-grow: 1.5;
-  color: #4c4d4d;
+  color: var(--mainText__color);
   font-weight: 600;
 }
 .contact__form > input {
@@ -929,7 +949,7 @@ width: 100%;
 }
 
 ::placeholder {
-  color: #b1b4b8;
+  color: var(--placeholder__color);
   font-weight: 600;
 }
 
@@ -938,18 +958,18 @@ width: 100%;
   margin-bottom: 16px;
   font-size: 21px;
   font-weight: 600;
-  color: #252b33;
+  color: var(--mainTitle__color);
 }
 
 .contactData__address {
-  color: #4c4d4d;
+  color: var(--mainText__color);
   font-size: 16px;
   margin-bottom: 24px;
 }
 
 .contact__text {
   font-size: 16px;
-  color: #4c4d4d;
+  color:var(--mainText__color);
   margin-bottom: 4px;
 }
 
@@ -958,7 +978,7 @@ p.last__parag {
 }
 
 .address__icon {
-  color: #20c997;
+  color: var(--button__color);
 }
 
 .follow__icons {
@@ -972,7 +992,7 @@ p.last__parag {
 }
 
 .follow__item {
-  color: #20c997;
+  color: var(--button__color);
   transition: 1s ease-in;
   padding: 0 5px;
   position: relative;
@@ -984,8 +1004,8 @@ p.last__parag {
 .follow__item .tooltiptext__go {
   visibility: hidden;
   width: 80px;
-  background-color: black;
-  color: #fff;
+  background-color: var(--black__color);
+  color: var(--white__color);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -1005,7 +1025,7 @@ p.last__parag {
 }
 
 .follow__item:hover {
-  color: #1baa80;
+  color: var(--hoverButton__color);
 }
 
 .contact__form .contactData__title {
@@ -1029,7 +1049,7 @@ p.last__parag {
 .form__button {
   text-decoration: none;
   cursor: pointer;
-  background-color: #20c997;
+  background-color: var(--button__color);
   color: #fff;
   border: unset;
   padding: 12.8px 41.6px;
@@ -1048,8 +1068,8 @@ p.last__parag {
 }
 
 .form__button:hover {
-  background-color: #1baa80;
-  color: #fff;
+  background-color: var(--hoverButton__color);
+  color: var(--white__color);
 }
 
 /**************************************************************************************************/
@@ -1062,7 +1082,7 @@ p.last__parag {
   width: 80%;
   font-size: 16px;
   font-weight: 400;
-  color: #252b33;
+  color: var(--mainTitle__color);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1084,7 +1104,7 @@ p.last__parag {
 }
 
 .footer__linkItem a:hover {
-  color: #20c997;
+  color: var(--button__color);
 }
 
 .footer__linkItem:last-child a {
@@ -1093,13 +1113,13 @@ p.last__parag {
 }
 
 .footer__link {
-  color: #20c997;
+  color: var(--button__color);
   text-decoration: none;
   transition: 0.3s ease-in;
 }
 
 .footer__link:hover {
-  color: #1baa80;
+  color: var(--hoverButton__color);
 }
 
 /**************************************************************************************************/
