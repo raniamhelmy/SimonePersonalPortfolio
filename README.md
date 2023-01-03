@@ -22,7 +22,7 @@ This is a Template Personal Portfolio Named as Simone Olivia. It was created as 
 
 Project is created with:
 
-* Font awsome version: 5.10
+* Font awesome version: 5.10
 
 ### Contributing
 
