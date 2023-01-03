@@ -1,4 +1,4 @@
-#SimonePersonalPortfolio
+# Simone Personal Portfolio
 
 This is a Template Personal Portfolio Named as Simone Olivia. It was created as a practice on pure HTML and CSS.
 
