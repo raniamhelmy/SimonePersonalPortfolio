@@ -129,9 +129,6 @@ body {
 }
 
 /*=========================Mobile Bar==============================*/
-/* .navbar__listItem--mobile{
-    border:1px solid red;
-} */
 .navbar__barIcon {
   color: var(--white__color);
   font-size: 35px;
