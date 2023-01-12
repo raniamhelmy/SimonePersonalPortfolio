@@ -32,7 +32,10 @@ body {
   text-shadow: none;
 }
 
-
+/************************************JS cursor blink removal************************************/
+.typed-cursor {
+  display: none;
+}
 
 /*******************************************NavBar Section*****************************************/
 .navbar__nav {
@@ -202,7 +205,9 @@ body {
 }
 
 .home__title {
-  font-size: 58px;
+  /* font-size: 58px; */
+  font-size: calc(28px + 3vw);
+  border-right: 4px solid #fff;
 }
 
 .home__desc {
@@ -1297,9 +1302,9 @@ p.last__parag {
     height: 100vh;
     margin-top: 0px;
   }
-  .home__title {
-    font-size: 35px;
-  }
+  /*.home__title {
+     font-size: 35px; 
+  }*/
   .services__card {
     width: 100%;
   }
@@ -1311,6 +1316,9 @@ p.last__parag {
   } */
   h2.titleBackground {
     font-size: calc(40px + 3vw);
+  }
+  .home__title {
+    font-size: calc(18px + 3vw)
   }
   /*.text__overlap {
      font-size: 25px; */
