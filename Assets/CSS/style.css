@@ -909,10 +909,11 @@ li.item--active a {
   font-weight: 600;
 }
 
-.contact__form > input {
-  width: calc(90% / 2);
-  margin: 0 12px;
-  margin-top: 24px;
+.contact__form input {
+  /* width: calc((98.5% / 2) - 24px ); */
+  width: calc((90%) / 2) ;
+  margin: 24px 12px 0 12px;
+  /* margin-top: 24px; */
 }
 
 .text__container {
@@ -1117,7 +1118,7 @@ p.last__parag {
   .services__cards {
     margin: auto;
   }
-  .contact__form > input,
+  .contact__form  input,
   .text__container > textarea {
     width: calc(95%);
   }
@@ -1275,7 +1276,7 @@ p.last__parag {
   .contact__form .contactData__title {
     text-align: center;
   }
-
+  
   .contact__form .contactData__title {
     padding: unset;
   }
