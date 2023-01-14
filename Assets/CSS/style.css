@@ -26,6 +26,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::selection {
   color: var(--white__color);
   background-color: var(--button__color);
