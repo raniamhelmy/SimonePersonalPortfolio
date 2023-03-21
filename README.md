@@ -1,6 +1,8 @@
 # Simone Personal Portfolio
 
-This is a Template Personal Portfolio Named as Simone Olivia. It was created as a practice on pure HTML and CSS.
+This is a Mimic version of Simone Personal Portfolio Template Named as Simone Olivia. It was created as a practice on pure HTML and CSS.
+
+You can find the Original Template [here](https://themeforest.net/item/simone-personal-portfolio-template/28476751)
 
 ## Website link 
 
